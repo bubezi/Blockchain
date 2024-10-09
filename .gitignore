@@ -1,0 +1,5 @@
+*.pyc
+*-env/
+env/
+blockchain-env/
+blockchain-project/node_modules/*
