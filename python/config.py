@@ -1,6 +1,6 @@
 # Ethereum contract settings
-CONTRACT_ADDRESS = '0xd2a5bC10698FD955D1Fe6cb468a17809A08fd005'  # Replace with your deployed contract address
-ETHEREUM_NODE_URL = 'http://127.0.0.1:7545'  # Ganache default URL
+CONTRACT_ADDRESS = '0xC1F051a32D446aAe4209B3eCF2815Ca9836D94E5'  # Replace with your deployed contract address
+ETHEREUM_NODE_URL = 'http://127.0.0.1:8545'  # Ganache default URL
 
 # IPFS settings
 IPFS_API = '/ip4/127.0.0.1/tcp/5001'

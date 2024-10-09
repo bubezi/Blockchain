@@ -1,3 +1,4 @@
+import config
 import ipfshttpclient
 from cryptography.fernet import Fernet
 import time

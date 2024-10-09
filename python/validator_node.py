@@ -1,11 +1,14 @@
 from scipy.spatial.distance import cosine
+import config
 
 class ValidatorNode:
     def __init__(self, id, w3):
         self.id = id
         self.w3 = w3
+        if id + config.NUM_CLIENTS >= len(w3.eth.accounts):
+            raise IndexError("Invalid account index.")
         self.address = w3.eth.accounts[id + config.NUM_CLIENTS]
-        self.trust_scores = {}
+        self.trust_scores = {}  
 
     def validate_update(self, client_address, model_update):
         # Simple validation check (replace with more sophisticated checks)
