@@ -6,9 +6,9 @@ ETHEREUM_NODE_URL = 'http://127.0.0.1:8545'  # Ganache default URL
 IPFS_API = '/ip4/127.0.0.1/tcp/5001'
 
 # Federated Learning settings
-NUM_CLIENTS = 200
+NUM_CLIENTS = 5
 NUM_VALIDATORS = 5
-NUM_ROUNDS = 40
+NUM_ROUNDS = 10
 
 # Model settings
 LEARNING_RATE = 0.01

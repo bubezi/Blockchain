@@ -1,7 +1,7 @@
-import config
 import ipfshttpclient
 from cryptography.fernet import Fernet
 import time
+import config
 
 class IPFSManager:
     def __init__(self, max_retries=3, retry_delay=1):
@@ -25,8 +25,7 @@ class IPFSManager:
     def encrypt_and_upload(self, model_update):
         encrypted_update = self.fernet.encrypt(str(model_update).encode())
         res = self.client.add_bytes(encrypted_update)
-        
-        return res 
+        return res
 
     def download_and_decrypt(self, ipfs_hash):
         encrypted_update = self.client.cat(ipfs_hash)
